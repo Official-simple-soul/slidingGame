@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#mainGame {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.419), rgba(0, 0, 0, 0.447)),url(img/bg.jpg);
+    height: 100vh;
+    width: 100%;
+    padding:  5%;
+}
+
+.slide {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+
+}
+.slide-card {
+    height: 300px;
+    width: 100px;
+    background: radial-gradient(rgba(255, 255, 255, 0.466), rgba(0, 128, 0, 0.844));
+}
+
+.anim {
+    /* animation: sliding 4s linear infinite; */
+}
+
+@keyframes sliding {
+    0% {
+        transform: translateY(100%);
+    }
+    
+    100% {
+        transform: translateY(-220%);
+    }
+}
